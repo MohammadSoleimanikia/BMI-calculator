@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 /*
 ! tailwindcss v3.4.10 | MIT License | https://tailwindcss.com
 */
@@ -446,7 +448,7 @@ video {
   display: none;
 }
 
-*, ::before, ::after {
+*, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -500,7 +502,7 @@ video {
   --tw-contain-style:  ;
 }
 
-::backdrop {
+::backdrop{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -552,4 +554,129 @@ video {
   --tw-contain-layout:  ;
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
+}
+
+.font-inter{
+  font-family: Inter;
+}
+
+.text-\[\#253347\]{
+  --tw-text-opacity: 1;
+  color: rgb(37 51 71 / var(--tw-text-opacity));
+}
+
+.main{
+  position: relative;
+  --tw-text-opacity: 1;
+  color: rgb(37 51 71 / var(--tw-text-opacity));
+}
+
+header{
+  position: absolute;
+  display: flex;
+  height: 83.333333%;
+  width: 100%;
+  justify-content: center;
+  border-bottom-right-radius: 2.5rem;
+  border-bottom-left-radius: 2.5rem;
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  --tw-gradient-from: #ebf1f9 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(235 241 249 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: #DCE9FE var(--tw-gradient-to-position);
+  padding: 3rem;
+}
+
+.logo{
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.hero{
+  position: absolute;
+  z-index: 10;
+  margin-top: 7rem;
+}
+
+.hero-heading{
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 600;
+}
+
+.hero-text{
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  text-align: center;
+}
+
+.hero-description{
+  margin-top: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(94 110 133 / var(--tw-text-opacity));
+}
+
+.hero-input{
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  width: 83.333333%;
+  flex-direction: column;
+  border-radius: 1rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding: 1.25rem;
+  --tw-shadow: 1rem 2rem 3.5rem rgba(143, 174, 207, 0.25);
+  --tw-shadow-colored: 1rem 2rem 3.5rem var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.input-heading{
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+}
+
+.radio-btns{
+  margin-bottom: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.radio-btn{
+  margin-top: 1.25rem;
+  display: flex;
+  place-items: center;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+.radio-btn input{
+  margin-right: 0.5rem;
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.input-text{
+  margin-bottom: 1.25rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity));
+}
+
+.output{
+  border-radius: 0.75rem;
+  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+  --tw-gradient-from: #345FF7 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(52 95 247 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: #587DFF var(--tw-gradient-to-position);
+  padding: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }

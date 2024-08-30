@@ -1,14 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <script defer src="./index.js"></script>
-</head>
-<body>
-
-
-</body>
+    <!-- logo script -->
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+  </head>
+  <body class="font-inter text-[#253347]">
+    <header>
+      <lord-icon
+        class="logo"
+        src="https://cdn.lordicon.com/jjoolpwc.json"
+        trigger="loop"
+        delay="1500"
+        stroke="bold"
+        colors="primary:#f21e84,secondary:#456dfa"
+      >
+      </lord-icon>
+    </header>
+    <main>
+    <section class="hero">
+      <div class="hero-text ">
+        <h1 class="hero-heading">Body Mass Index Calculator</h1>
+        <p class="hero-description">
+          Better understand your weight in relation to your height using our
+          body mass index (BM) calculator. While BMI is not the sole determinant
+          of a healthy weight, it offers a valuable starting point to evaluate
+          your overall health and well-being.
+        </p>
+      </div>
+      <div class="hero-input">
+        <h2 class="input-heading">Enter your details below</h2>
+        <div class="radio-btns">
+            <div class="radio-btn">
+                <input type="radio" name="unit" id="metric" />
+                <label for="metric">Metric</label>
+            </div>
+            <div class="radio-btn">
+                <input type="radio" name="unit" id="imperial" />
+                <label for="imperial">Imperial</label>  
+            </div>
+        </div>
+        <label for="height">Height</label>
+        <input class="input-text" type="number" name="height" id="height" />
+        <label for="weight">Weight</label>
+        <input class="input-text" type="number" name="weight" id="weight" />
+        <div class="output">
+          <div class="bmi-value">
+            <p>your BMI is ...</p>
+            <h2>122</h2>
+          </div>
+          <div>
+            <p class="bmi-description">
+              Your BMI suggests you’re Obese. Your ideal weight is 88kgs or greater.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bmi-result">
+        <img src="assets/imgs/image-man-eating.webp" alt="">
+    </section>
 </html>

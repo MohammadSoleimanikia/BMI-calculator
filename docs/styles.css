@@ -740,3 +740,61 @@ header{
 .improvement-description{
   margin-bottom: 2rem;
 }
+
+/* -------------------------------limitation section ---------------------------------------------- */
+
+.limit-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+}
+
+.limit-heading{
+  text-align: center;
+}
+
+.limit-title{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.limit-card{
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding: 0.75rem;
+  --tw-shadow: 1rem 2rem 3.5rem rgba(143, 174, 207, 0.25);
+  --tw-shadow-colored: 1rem 2rem 3.5rem var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.limit-card-heading{
+  display: flex;
+  align-items: center;
+}
+
+.limit-card-icon{
+  width: 3rem;
+  height: 3rem;
+}
+
+.limit-card-title{
+  margin-left: 0.75rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+.limit-card-description{
+  margin-top: 0.75rem;
+  padding: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(94 110 133 / var(--tw-text-opacity));
+}

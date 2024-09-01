@@ -76,3 +76,29 @@ header {
 .improvement-description{
     @apply mb-8
 }
+
+/* -------------------------------limitation section ---------------------------------------------- */
+.limit-container{
+  @apply p-5 flex flex-col justify-center items-center
+}
+.limit-heading{
+  @apply text-center
+}
+.limit-title{
+  @apply text-2xl 
+}
+.limit-card{
+  @apply w-full shadow-3xl my-5  bg-white rounded-lg p-3
+}
+.limit-card-heading{
+  @apply flex items-center
+}
+.limit-card-icon{
+  @apply size-12
+}
+.limit-card-title{
+  @apply font-semibold text-lg ml-3
+}
+.limit-card-description{
+  @apply p-3 mt-3 text-sm text-[#5E6E85]
+}

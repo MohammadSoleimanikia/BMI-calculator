@@ -1,46 +1,65 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.main{
-    @apply relative text-[#253347]
+.body {
+  @apply relative font-inter text-[#253347];
 }
-header{
-    @apply absolute flex justify-center w-full h-5/6 p-12  rounded-b-[2.5rem] bg-gradient-to-r from-[#ebf1f9] to-[#DCE9FE]
+/* ----------------------------------------hero section--------------------------------- */
+header {
+  @apply absolute -z-10 flex justify-center w-full h-[80vh] p-12  rounded-b-[2.5rem] bg-gradient-to-r from-[#FCFDFF] to-[#D8E8FE];
 }
-.logo{
-    @apply size-10
+.logo {
+  @apply size-10;
 }
-.hero{
-    @apply absolute z-10 mt-28
+.hero {
+  @apply pt-28;
 }
-.hero-heading{
-    @apply text-5xl font-semibold
+.hero-heading {
+  @apply text-5xl font-semibold;
 }
 .hero-text {
-    @apply text-center mx-1;
+  @apply text-center mx-1;
 }
-.hero-description{
-    @apply text-[#5E6E85] mt-7
+.hero-description {
+  @apply text-[#5E6E85] mt-5;
 }
-.hero-input{
-    @apply bg-white w-10/12 p-5 my-10 mx-auto rounded-2xl flex flex-col shadow-3xl;
+.hero-input {
+  @apply bg-white w-11/12 p-5 my-10 mx-auto rounded-2xl flex flex-col shadow-3xl;
 }
-.input-heading{
-    @apply text-2xl font-semibold;
+.input-heading {
+  @apply text-2xl font-semibold;
 }
-.radio-btns{
-    @apply flex justify-between mb-5
+.radio-btns {
+  @apply flex justify-between mb-5;
 }
-.radio-btn{
-    @apply text-lg font-semibold flex place-items-center mt-5
+.radio-btn {
+  @apply text-lg font-semibold flex place-items-center mt-5;
 }
-.radio-btn input{
-    @apply size-7 mr-2
+.radio-btn input {
+  @apply size-7 mr-2;
 }
-.input-text{
-    @apply h-12 mb-5 border-[1px] border-gray-300 rounded-xl
+.input-text {
+  @apply h-12 mb-5 border-[1px] border-gray-300 rounded-xl;
 }
-.output{
-    @apply bg-gradient-to-br from-[#345FF7] to-[#587DFF] rounded-xl p-5 text-white 
+.output {
+  @apply bg-gradient-to-br from-[#345FF7] to-[#587DFF] rounded-xl p-5 text-white;
+}
+/* -----------------------result section------------------------------------------------- */
+.bmi-result{
+    @apply h-screen
+}
+.bmi-result-text{
+    @apply w-11/12 mx-auto mt-5
+}
+.bmi-result-title{
+    @apply text-2xl font-semibold  my-5
+}
+.bmi-result-description{
+    @apply text-[#5e6e85] ;
+}
+
+/* ---------------------------improvement section------------------------------------ */
+.improvement-container{
+    @apply bg-gradient-to-r from-[#FCFDFF] to-[#D8E8FE];
 }

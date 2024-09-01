@@ -13,12 +13,13 @@
     <header>
       <lord-icon
         class="logo"
-        src="https://cdn.lordicon.com/jjoolpwc.json"
+        src="https://cdn.lordicon.com/pzetejwe.json"
         trigger="loop"
         delay="1500"
         stroke="bold"
-        colors="primary:#f21e84,secondary:#456dfa"
-      ></lord-icon>
+        colors="primary:#000000,secondary:#1cc8a1"
+      >
+      </lord-icon>
     </header>
     <section class="hero">
       <div class="hero-text">
@@ -32,29 +33,33 @@
       </div>
       <div class="hero-input">
         <h2 class="input-heading">Enter your details below</h2>
-        <div class="radio-btns">
-          <div class="radio-btn">
-            <input type="radio" name="unit" id="metric" />
-            <label for="metric">Metric</label>
-          </div>
-          <div class="radio-btn">
-            <input type="radio" name="unit" id="imperial" />
-            <label for="imperial">Imperial</label>
-          </div>
-        </div>
         <label for="height">Height</label>
-        <input class="input-text" type="number" name="height" id="height" />
+        <input
+          class="input-text"
+          type="number"
+          name="height"
+          placeholder="In Centimeter"
+          id="height"
+        />
         <label for="weight">Weight</label>
-        <input class="input-text" type="number" name="weight" id="weight" />
-        <div class="output">
+        <input
+          class="input-text"
+          type="number"
+          name="weight"
+          placeholder="In Kilogram"
+          id="weight"
+        />
+        <button id="input-btn" class="input-btn">Submit</button>
+        <div id="output" class="output">
           <div class="bmi-value">
-            <p>your BMI is ...</p>
-            <h2>122</h2>
+            <p id="output-title" class="output-title"></p>
+            <h2 class="output-value">Welcome!</h2>
           </div>
           <div>
-            <p class="bmi-description">
-              Your BMI suggests you’re Obese. Your ideal weight is 88kgs or
-              greater.
+            <p id="bmi-description" class="bmi-description">
+              Enter your height and weight and you’ll see your BMI result 
+              <br>
+              !WARNING: results are harsh.
             </p>
           </div>
         </div>

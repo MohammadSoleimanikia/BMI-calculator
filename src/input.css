@@ -30,75 +30,87 @@ header {
 .input-heading {
   @apply text-2xl font-semibold;
 }
-.radio-btns {
-  @apply flex justify-between mb-5;
-}
-.radio-btn {
-  @apply text-lg font-semibold flex place-items-center mt-5;
-}
-.radio-btn input {
-  @apply size-7 mr-2;
-}
 .input-text {
-  @apply h-12 mb-5 border-[1px] border-gray-300 rounded-xl;
+  @apply h-12 mb-5 border-[1px] border-gray-300 rounded-xl px-3;
+}
+.input-btn {
+  @apply w-full bg-gradient-to-br from-[#345FF7] to-[#587DFF] text-lg hover:from-[#2d52d6] hover:to-[#4967d3] text-white rounded-xl p-5 mb-5 transition-colors duration-500;
 }
 .output {
   @apply bg-gradient-to-br from-[#345FF7] to-[#587DFF] rounded-xl p-5 text-white;
 }
+.output-value{
+  @apply text-4xl font-semibold my-5;
+}
+.bmi-description{
+  @apply text-sm;
+}
+.under {
+  @apply bg-gradient-to-r from-[#FFEFD5] to-[#FFE4B5];
+}
+.normal {
+  @apply bg-gradient-to-r from-[#D0F0C0] to-[#90EE90];
+}
+.over {
+  @apply bg-gradient-to-r from-[#FFB6C1] to-[#FF69B4];
+}
+.obese {
+  @apply bg-gradient-to-r from-[#FFB6C1] to-[#FF0000];
+}
 /* -----------------------result section------------------------------------------------- */
 
-.bmi-result-text{
-    @apply w-11/12 mx-auto my-5
+.bmi-result-text {
+  @apply w-11/12 mx-auto my-5;
 }
-.bmi-result-title{
-    @apply text-2xl font-semibold  my-5
+.bmi-result-title {
+  @apply text-2xl font-semibold  my-5;
 }
-.bmi-result-description{
-    @apply text-[#5e6e85] ;
+.bmi-result-description {
+  @apply text-[#5e6e85];
 }
 
 /* ---------------------------improvement section------------------------------------ */
-.improvement-container{
-    @apply bg-gradient-to-r from-[#FCFDFF] to-[#D8E8FE] p-5;
+.improvement-container {
+  @apply bg-gradient-to-r from-[#FCFDFF] to-[#D8E8FE] p-5;
 }
-.improvement-item{
-    @apply flex flex-col 
+.improvement-item {
+  @apply flex flex-col;
 }
-.improvement-icon-container{
-    @apply flex justify-center items-center size-16 bg-[#C7E8F5] rounded-full p-2 mb-5
+.improvement-icon-container {
+  @apply flex justify-center items-center size-16 bg-[#C7E8F5] rounded-full p-2 mb-5;
 }
-.improvement-icon{
-    @apply size-14
+.improvement-icon {
+  @apply size-14;
 }
-.improvement-title{
-    @apply text-2xl mb-5
+.improvement-title {
+  @apply text-2xl mb-5;
 }
-.improvement-description{
-    @apply mb-8
+.improvement-description {
+  @apply mb-8;
 }
 
 /* -------------------------------limitation section ---------------------------------------------- */
-.limit-container{
-  @apply p-5 flex flex-col justify-center items-center
+.limit-container {
+  @apply p-5 flex flex-col justify-center items-center;
 }
-.limit-heading{
-  @apply text-center
+.limit-heading {
+  @apply text-center;
 }
-.limit-title{
-  @apply text-2xl 
+.limit-title {
+  @apply text-2xl;
 }
-.limit-card{
-  @apply w-full shadow-3xl my-5  bg-white rounded-lg p-3
+.limit-card {
+  @apply w-full shadow-3xl my-5  bg-white rounded-lg p-3;
 }
-.limit-card-heading{
-  @apply flex items-center
+.limit-card-heading {
+  @apply flex items-center;
 }
-.limit-card-icon{
-  @apply size-12
+.limit-card-icon {
+  @apply size-12;
 }
-.limit-card-title{
-  @apply font-semibold text-lg ml-3
+.limit-card-title {
+  @apply font-semibold text-lg ml-3;
 }
-.limit-card-description{
-  @apply p-3 mt-3 text-sm text-[#5E6E85]
+.limit-card-description {
+  @apply p-3 mt-3 text-sm text-[#5E6E85];
 }

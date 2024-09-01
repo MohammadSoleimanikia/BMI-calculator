@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 /*
 ! tailwindcss v3.4.10 | MIT License | https://tailwindcss.com
@@ -556,34 +556,29 @@ video {
   --tw-contain-style:  ;
 }
 
-.font-inter{
-  font-family: Inter;
-}
-
-.text-\[\#253347\]{
-  --tw-text-opacity: 1;
-  color: rgb(37 51 71 / var(--tw-text-opacity));
-}
-
-.main{
+.body{
   position: relative;
+  font-family: Inter;
   --tw-text-opacity: 1;
   color: rgb(37 51 71 / var(--tw-text-opacity));
 }
+
+/* ----------------------------------------hero section--------------------------------- */
 
 header{
   position: absolute;
+  z-index: -10;
   display: flex;
-  height: 83.333333%;
+  height: 80vh;
   width: 100%;
   justify-content: center;
   border-bottom-right-radius: 2.5rem;
   border-bottom-left-radius: 2.5rem;
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
-  --tw-gradient-from: #ebf1f9 var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(235 241 249 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-from: #FCFDFF var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(252 253 255 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-  --tw-gradient-to: #DCE9FE var(--tw-gradient-to-position);
+  --tw-gradient-to: #D8E8FE var(--tw-gradient-to-position);
   padding: 3rem;
 }
 
@@ -593,9 +588,7 @@ header{
 }
 
 .hero{
-  position: absolute;
-  z-index: 10;
-  margin-top: 7rem;
+  padding-top: 7rem;
 }
 
 .hero-heading{
@@ -611,7 +604,7 @@ header{
 }
 
 .hero-description{
-  margin-top: 1.75rem;
+  margin-top: 1.25rem;
   --tw-text-opacity: 1;
   color: rgb(94 110 133 / var(--tw-text-opacity));
 }
@@ -622,7 +615,7 @@ header{
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  width: 83.333333%;
+  width: 91.666667%;
   flex-direction: column;
   border-radius: 1rem;
   --tw-bg-opacity: 1;
@@ -679,4 +672,71 @@ header{
   padding: 1.25rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+/* -----------------------result section------------------------------------------------- */
+
+.bmi-result-text{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  width: 91.666667%;
+}
+
+.bmi-result-title{
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+}
+
+.bmi-result-description{
+  --tw-text-opacity: 1;
+  color: rgb(94 110 133 / var(--tw-text-opacity));
+}
+
+/* ---------------------------improvement section------------------------------------ */
+
+.improvement-container{
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  --tw-gradient-from: #FCFDFF var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(252 253 255 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: #D8E8FE var(--tw-gradient-to-position);
+  padding: 1.25rem;
+}
+
+.improvement-item{
+  display: flex;
+  flex-direction: column;
+}
+
+.improvement-icon-container{
+  margin-bottom: 1.25rem;
+  display: flex;
+  width: 4rem;
+  height: 4rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(199 232 245 / var(--tw-bg-opacity));
+  padding: 0.5rem;
+}
+
+.improvement-icon{
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.improvement-title{
+  margin-bottom: 1.25rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.improvement-description{
+  margin-bottom: 2rem;
 }

@@ -46,11 +46,9 @@ header {
   @apply bg-gradient-to-br from-[#345FF7] to-[#587DFF] rounded-xl p-5 text-white;
 }
 /* -----------------------result section------------------------------------------------- */
-.bmi-result{
-    @apply h-screen
-}
+
 .bmi-result-text{
-    @apply w-11/12 mx-auto mt-5
+    @apply w-11/12 mx-auto my-5
 }
 .bmi-result-title{
     @apply text-2xl font-semibold  my-5
@@ -61,5 +59,20 @@ header {
 
 /* ---------------------------improvement section------------------------------------ */
 .improvement-container{
-    @apply bg-gradient-to-r from-[#FCFDFF] to-[#D8E8FE];
+    @apply bg-gradient-to-r from-[#FCFDFF] to-[#D8E8FE] p-5;
+}
+.improvement-item{
+    @apply flex flex-col 
+}
+.improvement-icon-container{
+    @apply flex justify-center items-center size-16 bg-[#C7E8F5] rounded-full p-2 mb-5
+}
+.improvement-icon{
+    @apply size-14
+}
+.improvement-title{
+    @apply text-2xl mb-5
+}
+.improvement-description{
+    @apply mb-8
 }

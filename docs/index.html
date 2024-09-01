@@ -18,11 +18,10 @@
         delay="1500"
         stroke="bold"
         colors="primary:#f21e84,secondary:#456dfa"
-      >
-      </lord-icon>
+      ></lord-icon>
     </header>
     <section class="hero">
-      <div class="hero-text ">
+      <div class="hero-text">
         <h1 class="hero-heading">Body Mass Index Calculator</h1>
         <p class="hero-description">
           Better understand your weight in relation to your height using our
@@ -34,14 +33,14 @@
       <div class="hero-input">
         <h2 class="input-heading">Enter your details below</h2>
         <div class="radio-btns">
-            <div class="radio-btn">
-                <input type="radio" name="unit" id="metric" />
-                <label for="metric">Metric</label>
-            </div>
-            <div class="radio-btn">
-                <input type="radio" name="unit" id="imperial" />
-                <label for="imperial">Imperial</label>  
-            </div>
+          <div class="radio-btn">
+            <input type="radio" name="unit" id="metric" />
+            <label for="metric">Metric</label>
+          </div>
+          <div class="radio-btn">
+            <input type="radio" name="unit" id="imperial" />
+            <label for="imperial">Imperial</label>
+          </div>
         </div>
         <label for="height">Height</label>
         <input class="input-text" type="number" name="height" id="height" />
@@ -54,74 +53,96 @@
           </div>
           <div>
             <p class="bmi-description">
-              Your BMI suggests you’re Obese. Your ideal weight is 88kgs or greater.
+              Your BMI suggests you’re Obese. Your ideal weight is 88kgs or
+              greater.
             </p>
           </div>
         </div>
       </div>
     </section>
     <main class="main">
-        <section class="bmi-result">
-            <img src="assets/imgs/image-man-eating.webp" alt="image of a man eating sushi">
-            <div class="bmi-result-text">
-                <h2 class="bmi-result-title">What your BMI result means</h2>
-                <p class="bmi-result-description">A BMI range of 18.5 to 24.9 is considered a 'healthy weight'. Maintaining a 
-                    healthy weight may lower your chances of experiencing health issues later on,
-                     such as obesity and type 2 diabetes. Aim for a nutritious diet with reduced 
-                     fat and sugar content, incorporating ample fruits and vegetables. Additionally
-                     , strive for regular physical activity, ideally about 30 minutes daily for five 
-                     days a week.</p>
-            </div>
-        </section>
+      <section class="bmi-result">
+        <img
+          src="assets/imgs/image-man-eating.webp"
+          alt="image of a man eating sushi"
+        />
+        <div class="bmi-result-text">
+          <h2 class="bmi-result-title">What your BMI result means</h2>
+          <p class="bmi-result-description">
+            A BMI range of 18.5 to 24.9 is considered a 'healthy weight.'
+            Maintaining a healthy weight may lower your chances of experiencing
+            health issues later on, such as obesity and type 2 diabetes. Aim for
+            a nutritious diet with reduced fat and sugar content, incorporating
+            ample fruits and vegetables. Additionally, strive for regular
+            physical activity, ideally about 30 minutes daily for five days a
+            week.
+          </p>
+        </div>
+      </section>
 
-<!------------------------------------improve section --------------------------------  -->
-        <section class="improvement-container">
-            <div class="improvement-item">
-                    <lord-icon
-                        src="https://cdn.lordicon.com/nkizrism.json"
-                        trigger="hover"
-                        stroke="light"
-                        colors="primary:#000000,secondary:#16c79e"
-                        style="width:250px;height:250px">
-                    </lord-icon>
-                <div>
-                    <h2 class="improvement-title">Healthy eating</h2>
-                    <p class="improvement-description">
-                        Healthy eating promotes weight control, disease prevention, better digestion, immunity, mental clarity, and mood.
-                    </p>
-                </div>
-            </div>
-            <div class="improvement-item">
-                <script src="https://cdn.lordicon.com/lordicon.js"></script>
-                <lord-icon
-                    src="https://cdn.lordicon.com/qirwcvlr.json"
-                    trigger="hover"
-                    stroke="light"
-                    colors="primary:#22c1c1,secondary:#104891"
-                    style="width:250px;height:250px">
-                </lord-icon>
-                <div>
-                    <h2 class="improvement-title">Regular exercise</h2>
-                    <p class="improvement-description">
-                        Exercise improves fitness, aids weight control, elevates mood, and reduces disease risk, fostering wellness and longevity.
-                    </p>
-                </div>
-            </div>
-            <div class="improvement-item">
-                <lord-icon
-                    src="https://cdn.lordicon.com/awjihmup.json"
-                    trigger="hover"
-                    stroke="light"
-                    colors="primary:#22c1c1,secondary:#104891"
-                    style="width:250px;height:250px">
-                </lord-icon>
-                <div>
-                    <h2 class="improvement-title">Adequate sleep</h2>
-                    <p class="improvement-description">
-                        Sleep enhances mental clarity, emotional stability, and physical wellness, promoting overall restoration and rejuvenation.
-                    </p>
-                </div>
-            </div>
-        </section>
+      <!------------------------------------improve section --------------------------------  -->
+      <section class="improvement-container">
+        <div class="improvement-item">
+          <div class="improvement-icon-container">
+            <lord-icon
+              class="improvement-icon"
+              src="https://cdn.lordicon.com/nkizrism.json"
+              trigger="hover"
+              colors="primary:#000000,secondary:#16c79e"
+            ></lord-icon>
+          </div>
+          <div>
+            <h2 class="improvement-title">Healthy eating</h2>
+            <p class="improvement-description">
+              Healthy eating promotes weight control, disease prevention, better
+              digestion, immunity, mental clarity, and mood.
+            </p>
+          </div>
+        </div>
+        <div class="improvement-item">
+          <div class="improvement-icon-container">
+            <lord-icon
+              class="improvement-icon"
+              src="https://cdn.lordicon.com/qirwcvlr.json"
+              trigger="hover"
+              colors="primary:#22c1c1,secondary:#104891"
+            ></lord-icon>
+          </div>
+          <div>
+            <h2 class="improvement-title">Regular exercise</h2>
+            <p class="improvement-description">
+              Exercise improves fitness, aids weight control, elevates mood, and
+              reduces disease risk, fostering wellness and longevity.
+            </p>
+          </div>
+        </div>
+        <div class="improvement-item">
+          <div class="improvement-icon-container">
+            <lord-icon
+              class="improvement-icon"
+              src="https://cdn.lordicon.com/awjihmup.json"
+              trigger="hover"
+              colors="primary:#22c1c1,secondary:#104891"
+            ></lord-icon>
+          </div>
+          <div>
+            <h2 class="improvement-title">Adequate sleep</h2>
+            <p class="improvement-description">
+              Sleep enhances mental clarity, emotional stability, and physical
+              wellness, promoting overall restoration and rejuvenation.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="limit-container">
+        <h2 class="limit-title">Limitation of BMI</h2>
+        <p class="limit-description">
+          Although BMI is often a practical indicator of healthy weight, it is
+          not suited for every person. Specific groups should carefully consider
+          their BMI outcomes, and in certain cases, the measurement may not be
+          beneficial to use.
+        </p>
+      </section>
     </main>
+  </body>
 </html>

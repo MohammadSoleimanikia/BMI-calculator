@@ -676,14 +676,11 @@ header{
 
 /* -----------------------result section------------------------------------------------- */
 
-.bmi-result{
-  height: 100vh;
-}
-
 .bmi-result-text{
   margin-left: auto;
   margin-right: auto;
   margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
   width: 91.666667%;
 }
 
@@ -708,4 +705,38 @@ header{
   --tw-gradient-to: rgb(252 253 255 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
   --tw-gradient-to: #D8E8FE var(--tw-gradient-to-position);
+  padding: 1.25rem;
+}
+
+.improvement-item{
+  display: flex;
+  flex-direction: column;
+}
+
+.improvement-icon-container{
+  margin-bottom: 1.25rem;
+  display: flex;
+  width: 4rem;
+  height: 4rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(199 232 245 / var(--tw-bg-opacity));
+  padding: 0.5rem;
+}
+
+.improvement-icon{
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.improvement-title{
+  margin-bottom: 1.25rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.improvement-description{
+  margin-bottom: 2rem;
 }

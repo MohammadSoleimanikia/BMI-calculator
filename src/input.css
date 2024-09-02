@@ -7,25 +7,25 @@
 }
 /* ----------------------------------------hero section--------------------------------- */
 header {
-  @apply absolute -z-10 flex h-[80vh] w-full justify-center rounded-b-[2.5rem] bg-gradient-to-r from-[#FCFDFF] to-[#D8E8FE] p-12 lg:w-8/12;
+  @apply absolute -z-10 flex h-[80vh] w-full justify-center rounded-b-[2.5rem] bg-gradient-to-r from-[#FCFDFF] to-[#D8E8FE] p-12 lg:w-8/12 lg:h-screen;
 }
 .logo {
   @apply size-10 md:size-14;
 }
 .hero {
-  @apply pt-28 lg:flex lg:items-center;
+  @apply pt-28 lg:flex lg:items-center lg:h-screen ;
 }
 .hero-heading {
-  @apply text-5xl font-semibold;
+  @apply text-5xl lg:text-[80px] font-semibold;
 }
 .hero-text-container {
-  @apply mx-1 text-center lg:w-5/12 lg:p-20;
+  @apply mx-1 text-center lg:w-6/12 lg:p-20 lg:text-left;
 }
 .hero-description {
-  @apply mt-5 text-[#5E6E85];
+  @apply mt-5 text-[#5E6E85] lg:text-xl;
 }
 .hero-input {
-  @apply mx-auto my-10 flex w-11/12 lg:w-4/12 flex-col rounded-2xl  bg-white p-5 shadow-3xl md:w-8/12;
+  @apply mx-auto my-10 flex w-11/12 lg:w-6/12 flex-col rounded-2xl bg-white p-5 shadow-3xl md:w-8/12 xl:mr-10;
 }
 .hero-input-container {
   @apply flex flex-col md:mb-5 md:flex-row md:items-center md:justify-center md:gap-5;
@@ -37,7 +37,7 @@ header {
   @apply flex w-full flex-col;
 }
 .input-text {
-  @apply mb-5 h-12 rounded-xl border-[1px] border-gray-300 px-3 md:mb-0;
+  @apply mb-5 h-12 rounded-xl border-[1px] border-gray-300 max-w-full px-3 md:mb-0;
 }
 .input-btn {
   @apply mb-5 w-full rounded-xl bg-gradient-to-br from-[#345FF7] to-[#587DFF] p-5 text-lg text-white transition-colors duration-500 hover:from-[#2d52d6] hover:to-[#4967d3];

@@ -634,6 +634,7 @@ header{
 
 @media (min-width: 1024px){
   header{
+    height: 100vh;
     width: 66.666667%;
   }
 }
@@ -657,6 +658,7 @@ header{
 @media (min-width: 1024px){
   .hero{
     display: flex;
+    height: 100vh;
     align-items: center;
   }
 }
@@ -667,6 +669,12 @@ header{
   font-weight: 600;
 }
 
+@media (min-width: 1024px){
+  .hero-heading{
+    font-size: 80px;
+  }
+}
+
 .hero-text-container{
   margin-left: 0.25rem;
   margin-right: 0.25rem;
@@ -675,8 +683,9 @@ header{
 
 @media (min-width: 1024px){
   .hero-text-container{
-    width: 41.666667%;
+    width: 50%;
     padding: 5rem;
+    text-align: left;
   }
 }
 
@@ -684,6 +693,13 @@ header{
   margin-top: 1.25rem;
   --tw-text-opacity: 1;
   color: rgb(94 110 133 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px){
+  .hero-description{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
 }
 
 .hero-input{
@@ -711,7 +727,13 @@ header{
 
 @media (min-width: 1024px){
   .hero-input{
-    width: 33.333333%;
+    width: 50%;
+  }
+}
+
+@media (min-width: 1280px){
+  .hero-input{
+    margin-right: 2.5rem;
   }
 }
 
@@ -745,6 +767,7 @@ header{
 .input-text{
   margin-bottom: 1.25rem;
   height: 3rem;
+  max-width: 100%;
   border-radius: 0.75rem;
   border-width: 1px;
   --tw-border-opacity: 1;

@@ -7,42 +7,48 @@
 }
 /* ----------------------------------------hero section--------------------------------- */
 header {
-  @apply absolute -z-10 flex justify-center w-full h-[80vh] p-12  rounded-b-[2.5rem] bg-gradient-to-r from-[#FCFDFF] to-[#D8E8FE];
+  @apply absolute -z-10 flex h-[80vh] w-full justify-center rounded-b-[2.5rem] bg-gradient-to-r from-[#FCFDFF] to-[#D8E8FE] p-12 lg:w-8/12;
 }
 .logo {
-  @apply size-10;
+  @apply size-10 md:size-14;
 }
 .hero {
-  @apply pt-28;
+  @apply pt-28 lg:flex lg:items-center;
 }
 .hero-heading {
   @apply text-5xl font-semibold;
 }
-.hero-text {
-  @apply text-center mx-1;
+.hero-text-container {
+  @apply mx-1 text-center lg:w-5/12 lg:p-20;
 }
 .hero-description {
-  @apply text-[#5E6E85] mt-5;
+  @apply mt-5 text-[#5E6E85];
 }
 .hero-input {
-  @apply bg-white w-11/12 p-5 my-10 mx-auto rounded-2xl flex flex-col shadow-3xl;
+  @apply mx-auto my-10 flex w-11/12 lg:w-4/12 flex-col rounded-2xl  bg-white p-5 shadow-3xl md:w-8/12;
+}
+.hero-input-container {
+  @apply flex flex-col md:mb-5 md:flex-row md:items-center md:justify-center md:gap-5;
 }
 .input-heading {
   @apply text-2xl font-semibold;
 }
+.input-text-item {
+  @apply flex w-full flex-col;
+}
 .input-text {
-  @apply h-12 mb-5 border-[1px] border-gray-300 rounded-xl px-3;
+  @apply mb-5 h-12 rounded-xl border-[1px] border-gray-300 px-3 md:mb-0;
 }
 .input-btn {
-  @apply w-full bg-gradient-to-br from-[#345FF7] to-[#587DFF] text-lg hover:from-[#2d52d6] hover:to-[#4967d3] text-white rounded-xl p-5 mb-5 transition-colors duration-500;
+  @apply mb-5 w-full rounded-xl bg-gradient-to-br from-[#345FF7] to-[#587DFF] p-5 text-lg text-white transition-colors duration-500 hover:from-[#2d52d6] hover:to-[#4967d3];
 }
 .output {
-  @apply bg-gradient-to-br from-[#345FF7] to-[#587DFF] rounded-xl p-5 text-white;
+  @apply rounded-xl bg-gradient-to-br from-[#345FF7] to-[#587DFF] p-5 text-white;
 }
-.output-value{
-  @apply text-4xl font-semibold my-5;
+.output-value {
+  @apply my-5 text-4xl font-semibold;
 }
-.bmi-description{
+.bmi-description {
   @apply text-sm;
 }
 .under {
@@ -59,58 +65,79 @@ header {
 }
 /* -----------------------result section------------------------------------------------- */
 
+.bmi-result {
+  @apply mb-5 flex flex-col gap-5 md:flex-row md:items-center md:justify-around md:p-10;
+}
+.bmi-result-img {
+  @apply w-full md:w-2/5;
+}
 .bmi-result-text {
-  @apply w-11/12 mx-auto my-5;
+  @apply mx-auto my-5 w-11/12 lg:w-4/12;
 }
 .bmi-result-title {
-  @apply text-2xl font-semibold  my-5;
+  @apply my-5 text-2xl font-semibold md:text-4xl lg:text-6xl;
 }
 .bmi-result-description {
-  @apply text-[#5e6e85];
+  @apply text-[#5e6e85] lg:text-xl;
 }
 
 /* ---------------------------improvement section------------------------------------ */
 .improvement-container {
-  @apply bg-gradient-to-r from-[#FCFDFF] to-[#D8E8FE] p-5;
+  @apply bg-gradient-to-r from-[#FCFDFF] to-[#D8E8FE] p-5 md:flex md:gap-5 md:p-10 lg:w-10/12 lg:mx-auto lg:rounded-3xl ;
 }
 .improvement-item {
-  @apply flex flex-col;
+  @apply flex flex-col lg:my-20;
 }
 .improvement-icon-container {
-  @apply flex justify-center items-center size-16 bg-[#C7E8F5] rounded-full p-2 mb-5;
+  @apply mb-5 flex size-16 items-center justify-center rounded-full bg-[#C7E8F5] p-2;
 }
 .improvement-icon {
   @apply size-14;
 }
 .improvement-title {
-  @apply text-2xl mb-5;
+  @apply mb-5 text-2xl lg:text-4xl;
 }
 .improvement-description {
-  @apply mb-8;
+  @apply mb-8 lg:text-xl;
 }
 
 /* -------------------------------limitation section ---------------------------------------------- */
 .limit-container {
-  @apply p-5 flex flex-col justify-center items-center;
+  @apply flex flex-col items-center justify-center p-5 lg:w-9/12 lg:mx-auto md:grid md:grid-cols-3 md:gap-5;
+}
+.limit-container > :nth-child(1) {
+  @apply md:col-span-2;
+}
+.limit-container > :nth-child(3) {
+  @apply md:col-start-2;
+}
+.limit-container > :nth-child(5) {
+  @apply md:relative md:left-2/4;
+}
+.limit-container > :nth-child(6) {
+  @apply md:relative md:left-2/4;
 }
 .limit-heading {
   @apply text-center;
 }
+.limit-description{
+  @apply lg:text-xl
+}
 .limit-title {
-  @apply text-2xl;
+  @apply text-2xl lg:text-4xl;
 }
 .limit-card {
-  @apply w-full shadow-3xl my-5  bg-white rounded-lg p-3;
+  @apply my-5 w-full rounded-lg bg-white p-3 shadow-3xl;
 }
 .limit-card-heading {
-  @apply flex items-center;
+  @apply flex items-center ;
 }
 .limit-card-icon {
   @apply size-12;
 }
 .limit-card-title {
-  @apply font-semibold text-lg ml-3;
+  @apply ml-3 text-lg font-semibold lg:text-2xl;
 }
 .limit-card-description {
-  @apply p-3 mt-3 text-sm text-[#5E6E85];
+  @apply mt-3 p-3 text-sm text-[#5E6E85] lg:text-xl;
 }

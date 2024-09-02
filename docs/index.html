@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -22,7 +22,7 @@
       </lord-icon>
     </header>
     <section class="hero">
-      <div class="hero-text">
+      <div class="hero-text-container">
         <h1 class="hero-heading">Body Mass Index Calculator</h1>
         <p class="hero-description">
           Better understand your weight in relation to your height using our
@@ -33,22 +33,28 @@
       </div>
       <div class="hero-input">
         <h2 class="input-heading">Enter your details below</h2>
-        <label for="height">Height</label>
-        <input
-          class="input-text"
-          type="number"
-          name="height"
-          placeholder="In Centimeter"
-          id="height"
-        />
-        <label for="weight">Weight</label>
-        <input
-          class="input-text"
-          type="number"
-          name="weight"
-          placeholder="In Kilogram"
-          id="weight"
-        />
+        <div class="hero-input-container">
+          <div class="input-text-item">
+            <label for="height">Height</label>
+            <input
+              class="input-text"
+              type="number"
+              name="height"
+              placeholder="In Centimeter"
+              id="height"
+            />
+          </div>
+          <div class="input-text-item">
+            <label for="weight">Weight</label>
+            <input
+              class="input-text"
+              type="number"
+              name="weight"
+              placeholder="In Kilogram"
+              id="weight"
+            />
+          </div>
+        </div>
         <button id="input-btn" class="input-btn">Submit</button>
         <div id="output" class="output">
           <div class="bmi-value">
@@ -57,7 +63,7 @@
           </div>
           <div>
             <p id="bmi-description" class="bmi-description">
-              Enter your height and weight and you’ll see your BMI result 
+              Enter your height and weight and you’ll see your BMI result
             </p>
           </div>
         </div>
@@ -66,6 +72,7 @@
     <main class="main">
       <section class="bmi-result">
         <img
+          class="bmi-result-img"
           src="assets/imgs/image-man-eating.webp"
           alt="image of a man eating sushi"
         />
